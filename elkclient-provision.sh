@@ -20,7 +20,7 @@ apt-get update
 apt-get -y install logstash-forwarder
 
 ## INIT SCRIPT
-wget -q https://raw.github.com/elasticsearch/logstash-forwarder/master/logstash-forwarder.init -O /etc/init.d/logstash-forwarder
+wget -q https://raw.githubusercontent.com/elasticsearch/logstash-forwarder/a73e1cb7e43c6de97050912b5bb35910c0f8d0da/logstash-forwarder.init -O /etc/init.d/logstash-forwarder
 chmod +x /etc/init.d/logstash-forwarder
 update-rc.d logstash-forwarder defaults
 
